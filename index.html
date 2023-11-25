@@ -9,6 +9,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
 	<script src="mySketch.js"></script>
 	<script src="CartPendulum.js"></script>
+	<script src="CartVerlet.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
@@ -24,7 +25,7 @@
 			&#9776;
 		</button>
 		<div class="dropdown-menu text-center">
-			<button href="#myModal" class="btn btn-settings" data-backdrop="false" data-toggle="modal">Open Modal</button>
+			<button href="#myModal" class="btn btn-settings" data-backdrop="false" data-toggle="modal">Settings</button>
 		</div>
 	</div>
 	
@@ -69,8 +70,7 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					<button id="loadpage" type="button" class="btn btn-primary">Save</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 			<!-- /.modal-content -->
@@ -105,27 +105,44 @@
   $(document).ready(function() {
     // Update Gravity on input change
     $("#setting_gravity").on("input", function() {
-      g = parseInt($(this).val());
+      let gravity = parseFloat($(this).val());
+			// Validate that g is a number
+			if (!isNaN(gravity)) {
+				g = gravity;
+			}
     });
 
     // Update Friction on input change
     $("#setting_friction").on("input", function() {
-      friction = parseInt($(this).val());
+      let fr = parseFloat($(this).val());
+			// Validate that g is a number
+			if (!isNaN(fr)) {
+				friction = fr;
+			}
     });
 		
 		// Update cart mass on input change
     $("#setting_cart_mass").on("input", function() {
-      cart.cart_mass = parseInt($(this).val());
+      let mass = parseFloat($(this).val());
+			if (!isNaN(mass)) {
+				cart.cart_mass = mass;
+			}
     });
 		
 		// Update bob mass on input change
     $("#setting_bob_mass").on("input", function() {
-      cart.bob_mass = parseInt($(this).val());
+      let mass = parseFloat($(this).val());
+			if (!isNaN(mass)) {
+				cart.bob_mass = mass;
+			}
     });
 		
 		// Update external force on input change
     $("#setting_force").on("input", function() {
-      Force = parseInt($(this).val());
+      let force = parseFloat($(this).val());
+			if (!isNaN(force)) {
+				Force = force;
+			}
     });
   });
 </script>
