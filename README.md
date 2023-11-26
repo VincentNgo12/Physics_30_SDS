@@ -70,8 +70,20 @@ $$ = \frac{1}{2}m_2[\dot{x}^2 + l_1^2\dot{\theta_1}^2 + l_2^2\dot{\theta_2}^2 - 
 
 </br></br></br>
 
-<div align="center">The Lagrangian</div>
+### The Lagrangian
 
 $$ L = \color{cyan} T \color{default}- \color{limegreen} U $$
 
+
 $$ L = \color{cyan} \frac{1}{2}M\dot{x}^2 + \frac{1}{2}m_1[\dot{x}^2 - 2\dot{x}l_1\dot{\theta_1}\cos(\theta_1) + l_1^2\dot{\theta_1}^2] + \frac{1}{2}m_2[\dot{x}^2 + l_1^2\dot{\theta_1}^2 + l_2^2\dot{\theta_2}^2 - 2\dot{x}l_1\dot{\theta_1}\cos\theta_1 - 2\dot{x}l_2\dot{\theta_2}\cos\theta_2 + 2l_1l_2\dot{\theta_1}\dot{\theta_2}\cos(\theta_1-\theta_2)] \color{default} \\ - \color{limegreen} (m_1 + m_2)gl_1\cos(\theta_1) - m_2gl_2\cos(\theta_2) $$
+
+
+</br></br></br>
+
+### The Euler-Lagrangian Equation
+
+$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{q_i}}) - \frac{\partial L}{\partial q_i} = Q_i $$
+
+#### X
+
+$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{x}}) =  $$
