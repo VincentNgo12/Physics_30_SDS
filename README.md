@@ -62,7 +62,7 @@ $$ = \frac{1}{2}m_1[\dot{x}^2 - 2\dot{x}l_1\dot{\theta_1}\cos(\theta_1) + l_1^2\
 
 $$ \frac{1}{2}m_2(\dot{x_2}^2 + \dot{y_2}^2) = \frac{1}{2}m_2[(\dot{x} - l_1\dot{\theta_1}\cos(\theta_1) - l_2\dot{\theta_2}\cos(\theta_2))^2 + (-l_1\dot{\theta_1}\sin(\theta_1) - l_2\dot{\theta_2}\sin(\theta_2))^2]$$
 
-$$ = \frac{1}{2}m_2[(\dot{x}^2+l_1^2\dot{\theta_1}^2\cos^2(\theta_1) + l_2^2\dot{\theta_2}^2\cos^2(\theta_2) - 2\dot{x}l_1\dot{\theta_1}\cos(\theta_1) - 2\dot{x}l_2\dot{\theta_2}\cos(\theta_2) + 2l_1l_2\dot{\theta_1}\dot{\theta_2}\cos(\theta_1)\cos(\theta_2)) + (l_1^2\dot{\theta_1}^2\sin^2(\theta_1) + 2l_1l_2\dot{\theta_1}\dot{\theta_2}\sin(\theta_1)\sin(\theta_2) + l_2^2\dot{\theta_2}^2\sin^2(\theta_2))] $$
+$$ = \frac{1}{2}m_2[(\dot{x}^2+l_1^2\dot{\theta_1}^2\cos^2(\theta_1) + l_2^2\dot{\theta_2}^2\cos^2(\theta_2) - 2\dot{x}l_1\dot{\theta_1}\cos(\theta_1) - 2\dot{x}l_2\dot{\theta_2}\cos(\theta_2) + 2l_1l_2\dot{\theta_1}\dot{\theta_2}\cos(\theta_1)\cos(\theta_2)) \\+ (l_1^2\dot{\theta_1}^2\sin^2(\theta_1) + 2l_1l_2\dot{\theta_1}\dot{\theta_2}\sin(\theta_1)\sin(\theta_2) + l_2^2\dot{\theta_2}^2\sin^2(\theta_2))] $$
 
 $$ = \frac{1}{2}m_2[\dot{x}^2 + l_1^2\dot{\theta_1}^2(\cos^2\theta_1+\sin^2\theta_1) + l_2^2\dot{\theta_2}^2(\cos^2\theta_2+\sin^2\theta_2) - 2\dot{x}l_1\dot{\theta_1}\cos\theta_1 - 2\dot{x}l_2\dot{\theta_2}\cos\theta_2 + 2l_1l_2\dot{\theta_1}\dot{\theta_2}(\cos\theta_1\cos\theta_2 + \sin\theta_1\sin\theta_2)] $$
 
