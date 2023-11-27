@@ -86,4 +86,8 @@ $$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{q_i}}) - \frac{\partial L}{\part
 
 #### X
 
-$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{x}}) =  $$
+$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{x}}) = M\ddot{x}+m_1\ddot{x}-m_1l_1\ddot{\theta_1}\cos\theta_1+m_1l_1\dot{\theta_1}^2\sin\theta_1+m_2\ddot{x}-m_2l_1\ddot{\theta_1}\cos\theta_1+m_2l_1\dot{\theta_1}^2\sin\theta_1-m_2l_2\ddot{\theta_2}\cos\theta_2+m_2l_2\dot{\theta_2}^2\sin\theta_2 $$
+
+$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{q_i}}) - \frac{\partial L}{\partial q_i} = (M+m_1+m_2)\ddot{x}-(m_1l_1+m_2l_1)\ddot{\theta_1}\cos\theta_1+(m_1l_1+m_2l_1)\dot{\theta_1}^2\sin\theta_1-m_2l_2\ddot{\theta_2}\cos\theta_2+m_2l_2\dot{\theta_2}^2\sin\theta_2 $$
+
+$$ (M+m_1+m_2)\ddot{x}-(m_1l_1+m_2l_1)\ddot{\theta_1}\cos\theta_1+(m_1l_1+m_2l_1)\dot{\theta_1}^2\sin\theta_1-m_2l_2\ddot{\theta_2}\cos\theta_2+m_2l_2\dot{\theta_2}^2\sin\theta_2 = u(t) $$
