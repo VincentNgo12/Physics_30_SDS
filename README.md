@@ -98,4 +98,20 @@ $$ (M+m_1+m_2)\ddot{x}-(m_1l_1+m_2l_1)\ddot{\theta_1}\cos\theta_1+(m_1l_1+m_2l_1
 
 $$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{\theta_1}}) - \frac{\partial L}{\partial \theta_1} = 0 $$
 
-$$ \frac{\partial L}{\partial \dot{\theta_1}} = $$
+$$ \frac{\partial L}{\partial \dot{\theta_1}} = -m_1l_1\dot{x}\cos\theta_1+m_1l_1^2\dot{\theta_1}+m_2l_1^2\dot{\theta_1}-m_2l_1\dot{x}\cos\theta_1+m_2l_1l_2\dot{\theta_2}\cos(\theta_1-\theta_2) $$
+
+</br>
+
+$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{\theta_1}}) = -m_1l_1\ddot{x}\cos\theta_1+m_1l_1\dot{x}\sin\theta_1\dot{\theta_1}+m_1l_1^2\ddot{\theta_1}+m_2l_1^2\ddot{\theta_1}-m_2l_1\ddot{x}\cos\theta_1+m_2l_1\dot{x}\sin\theta_1 \dot{\theta_1}+m_2l_1l_2\ddot{\theta_2}\cos(\theta_1-\theta_2)-m_2l_1l_2\dot{\theta_2}\sin(\theta_1-\theta_2)(\dot{\theta_1}-\dot{\theta_2}) $$
+
+</br>
+
+$$ \frac{\partial L}{\partial \theta_1} = m_1l_1\dot{x}\dot{\theta_1}\sin\theta_1+m_2l_1\dot{x}\dot{\theta_1}\sin\theta_1-m_2l_1l_2\dot{\theta_1}\dot{\theta_2}\sin(\theta_1-\theta_2)+(m_1+m_2)gl_1\sin\theta_1 $$
+
+</br></br>
+
+$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{\theta_1}}) - \frac{\partial L}{\partial \theta_1} =  $$
+
+$$-m_1l_1\ddot{x}\cos\theta_1+m_1l_1\dot{x}\sin\theta_1\dot{\theta_1}+m_1l_1^2\ddot{\theta_1}+m_2l_1^2\ddot{\theta_1}-m_2l_1\ddot{x}\cos\theta_1 \\ +m_2l_1\dot{x}\sin\theta_1 \dot{\theta_1}+m_2l_1l_2\ddot{\theta_2}\cos(\theta_1-\theta_2)-m_2l_1l_2\dot{\theta_2}\sin(\theta_1-\theta_2)(\dot{\theta_1}-\dot{\theta_2}) \\ -m_1l_1\dot{x}\dot{\theta_1}\sin\theta_1-m_2l_1\dot{x}\dot{\theta_1}\sin\theta_1+m_2l_1l_2\dot{\theta_1}\dot{\theta_2}\sin(\theta_1-\theta_2) \\ -(m_1+m_2)gl_1\sin\theta_1 $$
+
+$$  $$
