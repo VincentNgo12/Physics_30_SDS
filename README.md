@@ -115,3 +115,12 @@ $$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{\theta_1}}) - \frac{\partial L}{
 $$-m_1l_1\ddot{x}\cos\theta_1+m_1l_1\dot{x}\sin\theta_1\dot{\theta_1}+m_1l_1^2\ddot{\theta_1}+m_2l_1^2\ddot{\theta_1}-m_2l_1\ddot{x}\cos\theta_1 \\ +m_2l_1\dot{x}\sin\theta_1 \dot{\theta_1}+m_2l_1l_2\ddot{\theta_2}\cos(\theta_1-\theta_2)-m_2l_1l_2\dot{\theta_2}\sin(\theta_1-\theta_2)(\dot{\theta_1}-\dot{\theta_2}) \\ -m_1l_1\dot{x}\dot{\theta_1}\sin\theta_1-m_2l_1\dot{x}\dot{\theta_1}\sin\theta_1+m_2l_1l_2\dot{\theta_1}\dot{\theta_2}\sin(\theta_1-\theta_2) \\ -(m_1+m_2)gl_1\sin\theta_1 $$
 
 $$  $$
+
+</br></br>
+
+#### $\theta_2$
+
+
+$$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{\theta_2}}) - \frac{\partial L}{\partial \theta_2} = 0 $$
+
+$$ \frac{\partial L}{\partial \dot{\theta_2}} = $$
