@@ -123,4 +123,6 @@ $$  $$
 
 $$ \frac{d}{dt}(\frac{\partial L}{\partial \dot{\theta_2}}) - \frac{\partial L}{\partial \theta_2} = 0 $$
 
-$$ \frac{\partial L}{\partial \dot{\theta_2}} = $$
+$$ \frac{\partial L}{\partial \dot{\theta_2}} = \frac{1}{2}m_2[2l_2^2\dot{\theta_2}-2\dot{x}l_2\cos\theta_2+2l_1l_2\dot{\theta_1}\cos(\theta_1-\theta_2)] $$
+
+$$ = m_2l_2^2\dot{\theta_2}-m_2\dot{x}l_2\cos\theta_2+m_2l_1l_2\dot{\theta_1}\cos(\theta_1-\theta_2) $$
