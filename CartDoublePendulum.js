@@ -4,9 +4,9 @@ class CartDoublePendulum {
           this.cart_pos = createVector(x,y);
           this.cart_xV = 0;
           this.cart_xA = 0;
-      this.cartWidth = cartWidth;
-      this.cartHeight = cartHeight;
-      this.l1 = 150;
+        this.cartWidth = cartWidth;
+        this.cartHeight = cartHeight;
+        this.l1 = 150;
           this.l2 = 150;
           this.cart_mass = cart_mass;
           this.bob_mass = bob_mass;
@@ -39,7 +39,7 @@ class CartDoublePendulum {
           this.cart_xV += this.cart_xA * dt;
           // check for border collision
           if(this.cart_pos.x == -(width/2 - cartWidth/2) || this.cart_pos.x == width/2 -cartWidth/2){
-              this.cart_xV *= -1;
+              this.cart_xV *= -0.8;
           }
           this.cart_pos.x += this.cart_xV * dt;
           

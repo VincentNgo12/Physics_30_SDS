@@ -31,7 +31,7 @@ class CartPendulum {
 		  this.cart_xV += this.cart_xA * dt;
 		  // check for border collision
 		  if(this.cart_pos.x == -(width/2 - cartWidth/2) || this.cart_pos.x == width/2 -cartWidth/2){
-			  this.cart_xV *= -1;
+			  this.cart_xV *= -0.8;
 		  }
 		  this.cart_pos.x += this.cart_xV * dt;
 		  
