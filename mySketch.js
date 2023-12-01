@@ -31,7 +31,8 @@ function setup() {
 	platformWidth = width;
 	platformX = -width/2;
 	
-	cart = new CartVerlet(0, 0, 100, 250, 50); //Create the cart
+	//cart = new CartDoublePendulum(0, 0, 100, 250, 50); //Create the cart
+	cart = new CartDoublePendulum(0, 0, 100, 50); //Create the cart
 }
 
 
