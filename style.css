@@ -62,8 +62,14 @@ button.btn-settings:active {
 
 #canvas-container {
   display: flex;
-  justify-content: center; /* Horizontal centering */ 
+  justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
 /*   height: 100vh; /* 100% of viewport height for vertical centering */ */
   background-color: "white"; /* Background color for the container */
+}
+
+#cartType{
+	position: absolute;
+	top: 80px;
+	left: 120px;
 }

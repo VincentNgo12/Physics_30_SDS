@@ -7,6 +7,8 @@ let platformY = -platformHeight; // Adjust the Y-coordinate as needed
 // Cart Size
 let cartWidth = 100;
 let cartHeight = 50;
+let single_cart;
+let double_cart;
 let cart;
 
 let g = 9.81; //Gravity
@@ -31,8 +33,10 @@ function setup() {
 	platformWidth = width;
 	platformX = -width/2;
 	
-	//cart = new CartDoublePendulum(0, 0, 100, 250, 50); //Create the cart
-	cart = new CartDoublePendulum(0, 0, 100, 50); //Create the cart
+	single_cart = new CartPendulum(0, 0, 100, 250, 50); //Create the cart
+	double_cart = new CartDoublePendulum(0, 0, 100, 50);
+	cart = single_cart;
+	show_hide_settings();
 }
 
 
@@ -85,4 +89,42 @@ function setCartesianCoordinate(){
   // Flip the y-axis
   scale(1, -1);
 	//You can now use the Cartesian coordinate in P5
+}
+
+
+// Function used for changing the cart type
+function changeCartType(){
+	let cartType = document.getElementById("cartType").value;
+	if(cartType === "single"){
+		cart = single_cart;
+		show_hide_settings();
+	}else if(cartType === "double"){
+		cart = double_cart;
+		show_hide_settings();
+	}
+}
+
+
+// Function to show and hide settings
+function show_hide_settings(){
+	let cartType = document.getElementById("cartType").value;
+	if(cartType === "single"){
+		let single_settings = document.getElementsByClassName("single");
+		let double_settings = document.getElementsByClassName("double");
+		for(let i =0; i<single_settings.length; i++){
+			single_settings[i].style.display = "flex";
+		}
+		for(let i =0; i<double_settings.length; i++){
+			double_settings[i].style.display = "none";
+		}
+	}else if(cartType === "double"){
+		let single_settings = document.getElementsByClassName("single");
+		let double_settings = document.getElementsByClassName("double");
+		for(let i =0; i<single_settings.length; i++){
+			single_settings[i].style.display = "none";
+		}
+		for(let i =0; i<double_settings.length; i++){
+			double_settings[i].style.display = "flex";
+		}
+	}
 }

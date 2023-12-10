@@ -30,6 +30,13 @@
 		</div>
 	</div>
 	
+	<!-- Select between carts			 -->
+	<label for="cartType">Select Pendulum Type:</label>
+	<select id="cartType" onchange="changeCartType()">
+		<option value="single">Single Pendulum</option>
+		<option value="double">Double Pendulum</option>
+	</select>
+	
 	<!-- Setting Modal	 -->
 	<div id="myModal" class="modal fade" style="width: 300px;">
 		<div class="modal-dialog">
@@ -59,9 +66,34 @@
 							<input type="number" class="form-control" id="setting_cart_mass" value="100" style="width: 70%;">
 						</div>
 						<!-- Setting 3-->
-						<div class="settings-list-item">
+						<div class="settings-list-item single">
 							<span>Bob Mass</span>
 							<input type="number" class="form-control" id="setting_bob_mass" value="50" style="width: 70%;">
+						</div>
+						<!-- Setting 3-->
+						<div class="settings-list-item double">
+							<span>Bob Mass 1</span>
+							<input type="number" class="form-control" id="setting_bob_mass_1" value="50" style="width: 70%;">
+						</div>
+						<!-- Setting 3-->
+						<div class="settings-list-item double">
+							<span>Bob Mass 2</span>
+							<input type="number" class="form-control" id="setting_bob_mass_2" value="50" style="width: 70%;">
+						</div>
+						<!-- Setting 3-->
+						<div class="settings-list-item single">
+							<span>Rod Length</span>
+							<input type="number" class="form-control" id="setting_rod_length" value="250" style="width: 70%;">
+						</div>
+						<!-- Setting 3-->
+						<div class="settings-list-item double">
+							<span>Rod Length 1</span>
+							<input type="number" class="form-control" id="setting_rod_length_1" value="150" style="width: 70%;">
+						</div>
+						<!-- Setting 3-->
+						<div class="settings-list-item double">
+							<span>Rod Length 1</span>
+							<input type="number" class="form-control" id="setting_rod_length_2" value="150" style="width: 70%;">
 						</div>
 						<!-- Setting 4-->
 						<div class="settings-list-item">
@@ -135,6 +167,42 @@
       let mass = parseFloat($(this).val());
 			if (!isNaN(mass)) {
 				cart.bob_mass = mass;
+			}
+    });
+		$("#setting_bob_mass_1").on("input", function() {
+      let mass = parseFloat($(this).val());
+			if (!isNaN(mass)) {
+				cart.bob_mass_1 = mass;
+			}
+    });
+		$("#setting_bob_mass_2").on("input", function() {
+      let mass = parseFloat($(this).val());
+			if (!isNaN(mass)) {
+				cart.bob_mass_2 = mass;
+			}
+    });
+		
+		// Update rod length on input change
+    $("#setting_rod_length").on("input", function() {
+      let length = parseFloat($(this).val());
+			if (!isNaN(length)) {
+				cart.l = length;
+			}
+    });
+		
+		// Update rod length on input change
+    $("#setting_rod_length_1").on("input", function() {
+      let length = parseFloat($(this).val());
+			if (!isNaN(length)) {
+				cart.l1 = length;
+			}
+    });
+		
+		// Update rod length on input change
+    $("#setting_rod_length_2").on("input", function() {
+      let length = parseFloat($(this).val());
+			if (!isNaN(length)) {
+				cart.l2 = length;
 			}
     });
 		
